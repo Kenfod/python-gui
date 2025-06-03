@@ -1,0 +1,27 @@
+from tkinter import *
+from tkinter import filedialog
+
+def openFile():
+    filepath = filedialog.askopenfilename()
+    #print(filepath)
+    file = open(filepath,'r')
+    print(file.read())
+    file.close()
+
+
+window = Tk()
+
+
+window.geometry("500x500")
+window.title("Kay Inc.")
+icon = PhotoImage(file='1_windows\\jipange.png')
+window.iconphoto(True, icon)
+window.config(background="cyan")
+
+
+button = Button(text='Open File', 
+               command=openFile)
+button.pack()
+
+
+window.mainloop()

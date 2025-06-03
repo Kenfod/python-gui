@@ -23,9 +23,9 @@ python_photo =PhotoImage(file='python.png')
 
 check_button = Checkbutton(window, 
                            text="I agree to the conditions", 
-                           variable='YES',
-                           onvalue='NO',
-                           offvalue=0,
+                           variable=x,
+                           onvalue='YES',
+                           offvalue='NO',
                            command=display,
                            font=('Arial,20'),
                            fg='#00FF00',

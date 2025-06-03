@@ -9,6 +9,8 @@ def display():
 
 window = Tk()
 
+# where x variable is an integer
+
 window.geometry("500x500")
 window.title("Kay Inc.")
 icon = PhotoImage(file='1_windows\\jipange.png')

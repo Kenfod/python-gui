@@ -15,9 +15,9 @@ count=0
 def click():
     global count
     count+=1
-    print(count)
+    # print(count)
 
-    #print("You clicked the button times!")
+    print("You clicked the button "+str(count)+" times!")
 
 photo = PhotoImage(file='thumb-up.png')
 
